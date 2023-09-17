@@ -154,7 +154,7 @@ RCT_CUSTOM_VIEW_PROPERTY(sharedCookiesEnabled, BOOL, RNCWebViewImpl) {
 
 #if !TARGET_OS_OSX
 RCT_CUSTOM_VIEW_PROPERTY(decelerationRate, CGFloat, RNCWebViewImpl) {
-  view.decelerationRate = json == nil ? UIScrollViewDecelerationRateNormal : [RCTConvert CGFloat: json];
+  view.decelerationRate = json == nil ? UIScrollViewDecelerationRateFast : [RCTConvert CGFloat: json];
 }
 #endif // !TARGET_OS_OSX
 
